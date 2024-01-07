@@ -1,0 +1,284 @@
+.grid-menu-principal{
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 900;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows:60px;
+    grid-template-areas: "grid-menu-links grid-menu-logo grid-menu-iconos";
+    background:#fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+    /*font-weight: bold; /* Hacer el texto en negrita */
+    /*letter-spacing: 2px; /* Aumentar el espaciado entre letras */
+    /*max-width: 100%; /* Establecer un ancho máximo para el contenedor */
+    /*margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    /*padding:5px 0px 0px 15px;
+    /*margin: 5px 0px 0px 2px; /* Margen superior, derecho, inferior e izquierdo respectivamente */
+}
+
+.contenedor-menu-boton{
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.grid-menu-links{
+    grid-area: grid-menu-links;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-menu-iconos {
+    grid-area: grid-menu-iconos;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-menu-links a,
+.grid-menu-iconos a {
+    color: #181818;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.grid-menu-links .formulario-buscar {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.grid-menu-links .formulario-buscar input[type="text"] {
+    display: block;
+    font-family:inherit;
+    height:40px;
+    width: 100%;
+    padding-left: 20px;
+    border: none;
+    outline: 0;
+    color: #ECEFF1;
+    font-size: 16px;
+}
+
+
+.grid-menu-links .formulario-buscar buttom {
+    background-color: black;
+    height:40px;
+    padding: 5px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width:40px;
+    cursor: pointer;
+    border:none;
+
+}
+
+.grid-menu-logo a {
+    grid-area: grid-menu-logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: deeppink;
+    text-decoration: none; /* Eliminar el subrayado */
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    font-size: 25px;
+    transition: opacity 0.3s ease; /* Agregar una transición suave */
+}
+
+/* Cambiar la opacidad al pasar el cursor o al estar seleccionado */
+.grid-menu-logo a:hover,
+.grid-menu-logo a:focus {
+    opacity: 0.4; /* Reducir la opacidad al pasar el cursor o al estar seleccionado */
+}
+
+/*SUBMENU*/
+
+.grid-sub-menu {
+    display: none;
+    padding: 10px;
+    width:100%;
+    position:fixed;
+    z-index: 900;
+    background-color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.grid-sub-menu-activo {
+    display:grid;
+}
+
+.grid-contenedor-sub-menu-links a{
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    color: black;
+    margin-left: 12px;
+}
+
+.grid-columna-sub-menu {
+    max-height: 225px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 7px;
+}
+
+.grid-columna-sub-menu p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.grid-contenedor-sub-menu-imagenes {
+    flex: 1;
+    display: flex;
+    grid-gap: 30px;
+    justify-content: flex-end;
+}
+
+.grid-contenedor-sub-menu-imagenes a {
+    position: relative;
+    text-decoration: none;
+}
+
+.grid-contenedor-sub-menu-imagenes .grid-contenedor-producto {
+    position: relative;
+    overflow: hidden;
+    height: max-content;
+    padding-top: initial;
+    width:100%;
+    border-radius: 0;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.grid-contenedor-sub-menu-imagenes .grid-contenedor-producto img {
+    width: 100%;
+    height: 100%;
+    position: initial;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.grid-contenedor-sub-menu-imagenes p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    font-weight: 600;
+    text-align: left;
+}
+
+@media screen and (max-width:800px) {
+.contenedor-menu-boton {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.contenedor-menu-boton img {
+    width: 30px; /* Ajusta el ancho según sea necesario */
+    height: 30px; /* Ajusta la altura según sea necesario */
+}
+
+.grid-menu-links {
+    background-color: #ECEFF1;
+    top: 80px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    diplay: flex;
+    flex-direction: column;
+    aling-items: center;
+    justify-content: flex-start;
+    transition: 0.3s ease all;
+    transform: translate(-100%);
+    text-decoration: none;
+}
+.grid-menu-iconos img {
+    width: 30px; /* Ajusta el ancho según sea necesario */
+    height: 30px; /* Ajusta la altura según sea necesario */
+}
+
+
+.grid-menu-links-activo {
+    transform: translate(0%);
+}
+
+.grid-menu-links .formulario-buscar {
+    diplay: flex;
+}
+
+.grid-sub-menu {
+    display: none;
+}
+
+.menu-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.menu-links-cabecera {
+    font-size: 16px;
+    padding: 10px 10px;
+    width: 1500px;
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    font-weight: bold;
+}
+
+.menu-links-iconos {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+
+}
+
+.menu-links-iconos a {
+    font-size: 16px;
+    padding: 10px 10px;
+    width: 1500px;
+    align-items: center; /* Alinea verticalmente */
+    font-weight: bold;
+    display: inline-flex;
+
+}
+
+.menu-links-cabecera img {
+    width:10px;
+    margin-left: 10px;
+}
+
+
+
+.menu-link-submenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.menu-link-submenu-activo {
+    display: flex;
+
+}
+
+.menu-link-submenu a {
+    padding: 10px 20px;
+}
+
+}

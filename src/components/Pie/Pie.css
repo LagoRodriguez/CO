@@ -1,0 +1,175 @@
+.contenedor-pie {
+    display: grid;
+    grid-template-columns: 35% 35% 15% 15%;
+    grid-template-areas: "pie-registro pie-promocion pie-redes-sociales pie-info";
+    padding: 40px;
+    background-color: pink;
+    color:white;
+}
+
+.pie-registro {
+    grid-area: pie-registro;
+}
+
+.pie-redes-sociales {
+    grid-area: pie-redes-sociales;
+}
+.pie-info {
+    grid-area: pie-info;
+}
+
+
+.contenedor-pie div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.contenedor-pie div h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.17;
+}
+
+.contenedor-pie div p,
+.contenedor-pie div a {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.contenedor-pie div form {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenedor-pie form label,
+.contenedor-pie form input {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.contenedor-pie form label{
+    diplay: flex;
+    aling-item: center;
+}
+
+.contenedor-pie form label img {
+    width: 20px;
+    height: 20px;
+}
+
+.contenedor-pie form input [type="email"] {
+    display: block;
+    font-family: inherit;
+    font-size:13px;
+    background-color: #ECEFF1;
+    width: 100%;
+    padding: 0 0 8px 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #999;
+    margin-top: 20px;
+}
+
+.contenedor-pie form input [type="email"]:focus{
+    outline: none;
+}
+
+.contenedor-pie form input [type="submit"] {
+    font-family: inherit;
+    margin-top:  20px;
+    font-weight: 300;
+    width: 100%;
+    border:1px solid #181818;
+    margin-top: 20px;
+    color: #181818;
+    cursor: pointer;
+}
+
+.contenedor-pie form input[type="submit"]:hover{
+    background: black;
+    color:white;
+}
+
+.contenedor-pie-check{
+    display: block;
+    position:relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.contenedor-pie-check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-pie {
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid #181818;
+}
+
+.contenedor-pie-check:hover input ~.checkmark-pie{
+    background-color: white;
+}
+
+.contenedor-pie-check input:checked ~.checkmark-pie{
+    background-color: rgb(201, 201, 201);
+}
+
+.checkmark-pie:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.contenedor-pie-check input:checked ~.checkmark-pie:after {
+    display: block;
+}
+
+. {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    alling-items: center;
+    background-color: #ECEFF1;
+    font-size: 13px
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor-pie {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-areas:
+        "pie-registro pie promociones"
+        "pie-redes-sociales pis-info";
+    }
+
+    @media screen and (max-width: 500px) {
+        .contenedor-pie {
+            grid-template-columns: 100%;
+            grid-templete-rows: 1fr 1fr;
+
+            grid-template-areas:
+        "pie-registro"
+        "pie-promociones"
+        "pie-redes-sociales"
+        "pie-info";
+        }
+    }
+}

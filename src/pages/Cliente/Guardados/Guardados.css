@@ -1,0 +1,90 @@
+.grid-perfil-detalles h4 {
+    color:#999;
+    font-size:17.33px;
+    margin-bottom:10px
+}
+
+.grid-perfil-detalles .contenedor-guardador-productos{
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    position: relative;
+    border-bottom: 1px solid #999;
+}
+
+.grid-perfil-detalles .guardados-imagen {
+    width:25%;
+}
+
+.grid-perfil-detalles .guardados-descripcion {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    justify-content: space-between;
+}
+
+grid-perfil-detalles .guardados-imagen a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.grid-perfil-detalles .guardados-imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-perfil-detalles .guardados-descripcion h5{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.grid-perfil-detalles .guardados-descripcion span{
+    font-size: 12px;
+}
+
+.grid-perfil-detalles .guardados-descripcion .guardados-descripcion-botones {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-perfil-detalles .guardados-descripcion select {
+    border: 1px solid #999;
+    padding: 8px 30px 8px 10px;
+    /*background: url("public/icons/select.svg");*/
+    background-position: calc(100% - 12px) center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    border-radius: 0;
+    width: 48%;
+}
+
+.grid-perfil-detalles .guardados-descripcion button {
+    border-color: #999;
+    padding: 8px 30px 8px 10px;
+    font-size: 12px;
+    background-color: transparent;
+    border:1px solid #181818;
+    color: #181818;
+    font-weight: 300;
+    transition: background-color 0.2s ease;
+    cursor:pointer;
+    width: 48%;
+}
+
+.grid-perfil-detalles .guardados-descripcion-borrar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 500px){
+    .grid-perfil-detalles .guardados-descripcion .guardados-descripcion-botones {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-perfil-detalles .guardados-descripcion select {
+        width: 100%;
+    }
+}

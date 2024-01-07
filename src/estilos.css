@@ -1,0 +1,24 @@
+.contenedor-seccion {
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+    max-width: 1200px; /* Establecer un ancho máximo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 0 10px; /* Agregar margen interno a los lados */
+    margin-top: 80px; /* Mantener el margen superior */
+    box-sizing: border-box; /* Incluir padding y border en el ancho y alto total */
+
+}
+
+/* Estilos para pantallas más pequeñas (Media Queries) */
+@media screen and (max-width: 768px) {
+    .contenedor-seccion {
+        padding: 0 10px; /* Reducir el padding en pantallas más pequeñas */
+    }
+}
+
+/* Estilos para pantallas aún más pequeñas (por ejemplo, dispositivos móviles) */
+@media screen and (max-width: 480px) {
+    .contenedor-seccion {
+        max-width: 100%; /* Hacer que el contenedor ocupe todo el ancho disponible */
+        margin-top: 40px; /* Ajustar el margen superior en pantallas más pequeñas */
+    }
+}

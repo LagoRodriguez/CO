@@ -1,0 +1,89 @@
+.contenedor-direccion {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-direccion p {
+    margin: 5px 0;
+}
+
+.contenedor-direccion button {
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: lightpink;
+    color: white;
+}
+
+.contenedor-direccion button:hover {
+    background-color: lightpink;
+}
+
+.contenedor-direccion-boton {
+    margin-top: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: lightpink;
+    color: white;
+}
+
+.contenedor-direccion-boton:hover {
+    background-color: lightpink;
+}
+
+.contenedor-padre-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.contenedor-modal h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contenedor-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-modal input,
+.contenedor-modal textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contenedor-modal input[type="submit"] {
+    background-color: lightpink;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contenedor-modal input[type="submit"]:hover {
+    background-color: lightpink;
+}

@@ -1,0 +1,87 @@
+.manifiesto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si no caben en una línea */
+
+}
+
+/* Estilos para la imagen dentro de "manifiesto-imagen" */
+.manifiesto-imagen,
+.manifiesto-imagen-central {
+    flex: 1;  /* Ocupar todo el espacio disponible */
+    margin:4px; /* Ajusta el espacio entre las imágenes */
+    max-width: 1900px; /* Ajusta el ancho máximo de las imágenes */
+    border: 1px solid #282c34; /* Agregar un borde de 2px de ancho y color gris claro */
+}
+
+.manifiesto-imagen img,
+.manifiesto-imagen-central img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block; /* Asegurar que las imágenes se muestren correctamente */
+    margin: auto; /* Centrar las imágenes */
+}
+
+/* Estilos para el contenido dentro de "manifiesto-contenido" */
+.manifiesto-contenido {
+    text-align: center;
+    padding: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+}
+
+.manifiesto-contenido h4 {
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Estilos para el párrafo p dentro de "manifiesto-contenido" */
+.manifiesto-contenido p {
+    font-size: 16px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el enlace Link dentro de "manifiesto-contenido" */
+.manifiesto-contenido a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    opacity: 0.8;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: box-shadow 0.3s ease;
+
+}
+
+.manifiesto-contenido a:hover {
+    background-color: #ff1493;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6)
+}
+
+/* Estilos para el contenedor principal */
+.contacto-container {
+    margin: 20px auto; /* Margen equilibrado izquierdo y derecho, centrado */
+    padding: 10px; /* Espaciado interno */
+
+    /* Estilos de la caja */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    max-width: 600px; /* Máximo ancho de la caja */
+}
+
+/* Estilos para el título */
+.titulo-contacto {
+    color: black; /* Color del título (rojo claro) */
+    text-align: center; /* Centrar el título */
+}
+
+.contacto-info .info {
+    margin-left: 20px;
+    font-size: 15px;
+}

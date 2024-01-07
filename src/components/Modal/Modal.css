@@ -1,0 +1,76 @@
+.contenedor-padre-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho total de la ventana */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo semi-transparente */
+    z-index: 999; /* Asegúrate de que el modal esté encima de otros elementos */
+}
+
+.contenedor-modal {
+    position: relative;
+    width: 800px;
+    max-width: 800px;
+    padding: 50px;
+    background-color: lightpink;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos adicionales para el contenido del modal, puedes personalizar según tus necesidades */
+.contenedor-modal h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contenedor-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-modal button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: white;
+
+}
+
+.contenedor-modal input {
+    margin-bottom: 20px;
+}
+
+.contenedor-select {
+    margin-bottom: 10px; /* Espacio entre contenedor-select y otros elementos */
+    /* Agrega otros estilos según tus necesidades */
+}
+
+.ocultar-select {
+    /* Agrega estilos para el contenedor oculto según tu diseño */
+    display: none;
+}
+
+.contenedor-check {
+    /* Agrega estilos para el contenedor de checkboxes */
+    margin-top: 10px; /* Espacio entre contenedor-check y otros elementos */
+    /* Agrega otros estilos según tus necesidades */
+}
+
+/* Estilos para los checkboxes dentro de contenedor-check */
+.contenedor-check label {
+    display: block;
+    margin-bottom: 5px; /* Espacio entre cada checkbox */
+}
+.contenedor-select {
+    margin-bottom: 20px; /* Espacio entre contenedor-select y otros elementos */
+
+}
+
+.ocultar-select {
+    /* Agrega estilos para el contenedor oculto según tu diseño */
+    display: none;
+}

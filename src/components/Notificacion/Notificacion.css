@@ -1,0 +1,14 @@
+.contenedor-notificacion {
+    z-index: 900;
+    position: fixed;
+    background-color: #ff1493;
+    box-shadow: hotpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+}

@@ -1,0 +1,100 @@
+.contenedor-ingresar {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor-ingresar h3 {
+    margin-top: 20px;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.contenedor-ingresar p {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.contenedor-ingresar p a {
+    margin-left: 5px;
+}
+
+.contenedor-ingresar form {
+    max-width: 600px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-ingresar form input [type="email"],
+.contenedor-ingresar form input [type="password"]
+{
+    display: block;
+    font-family: inherit;
+    font-size: 13px;
+    background-color: white;
+    width: 100%;
+    padding: 15px 5px 15px 5px;
+    border: 1px solid #999;
+    margin-top: 20px;
+}
+
+.contenedor-ingresar form input [type="email"]:focus,
+.contenedor-ingresar form input [type="password"]:focus
+{
+    outline: none;
+}
+
+.contenedor-ingresar form input[type="submit"]{
+    padding: 15px 0 15px 0;
+    font-family: inherit;
+    margin-top: 20px;
+    border: 1px solid #181818;
+    font-weight: 300;
+    background-color: #181818;
+    color: white;
+    cursor: pointer;
+}
+
+.contenedor-ingresar form input[type="submit"]:hover{
+    background-color: #282c34;
+    color:white;
+}
+
+.contenedor-ingresar .cambiar-contrasena {
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: inherit;
+    color: #888888;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.contenedor-ingresar .contenedor-cambiar-contrasena{
+    margin-top: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: inherit;
+    color: #888888;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.contenedor-ingresar form label {
+    display: flex;
+    margin-top: 20px;
+}
+
+.contenedor-ingresar form label span {
+    font-size: 12px;
+    cursor: pointer;
+    color: #999999;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 1.7;
+}
+

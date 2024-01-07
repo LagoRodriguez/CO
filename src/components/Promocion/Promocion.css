@@ -1,0 +1,13 @@
+.contenedor-promocion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: BlinkMacSystemFont;
+    font-size: medium;
+    box-shadow: 4px 4px 8px rgba(248, 123, 200, 0.61); /* Sombra en la parte derecha e inferior */
+    border: 1px solid rgba(218, 37, 149, 0.97);
+    padding: 5px; /* Relleno interior */
+    margin: 20px auto; /* Margen exterior */
+    width: 600px; /* Ancho */
+    height: 50px; /* Alto */
+}

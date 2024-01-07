@@ -1,0 +1,50 @@
+.formulario-pagar {
+    border: 1px solid #CCC;
+    display: flex;
+    justify-content: flex-start;
+    aling-items: center;
+    width: 300%;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.formulario-pagar .formulario-pagar-titulo {
+    border-bottom: 16px solid #CCC;
+    padding-bottom: 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-pagar .formulario-pagar-titulo h3 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.contenedor-resultado {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #CCC;
+    padding: 8px 0;
+}
+
+.contenedor-resultado span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+}
+
+.contenedor-descripcion-imagen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px;
+    padding-bottom: 10px;
+}
+
+.contenedor-descripcion-imagen img {
+    width: 100%;
+    cursor: pointer;
+}

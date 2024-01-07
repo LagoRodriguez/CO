@@ -1,0 +1,64 @@
+.grid-especificacion-promociones {
+    display: grid;
+    width: 100%;
+}
+.grid-especificacion-contenido {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.columna:nth-child(1) {
+    grid-column: 1;
+}
+
+.columna:nth-child(2) {
+    grid-column: 2;
+}
+
+.columna:nth-child(3) {
+    grid-column: 3;
+}
+
+.columna:nth-child(4) {
+    grid-column: 4;
+
+}
+
+.grid-especificacion-contenido h4 {
+    color: #282c34;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Dialog;
+    text-align: center;
+    box-shadow: 1px 4px 12px rgba(248, 123, 200, 0.12); /* Sombra en la parte derecha e inferior */
+    padding: 50px; /* Relleno interior */
+    letter-spacing: 2px;
+
+
+}
+
+/*.grid-especificacion-contenido p {*/
+/*    margin-top:10px;*/
+/*    line-height:1.7;*/
+/*    font-weight: 100;*/
+/*    margin-right: 40px;*/
+/*    margin-left: 40px;*/
+/*    text-align: center;*/
+/*    color: #282c34;*/
+/*    font-size: 16px;*/
+/*}*/
+
+@media screen and (max-width: 600px) {
+    .grid-especificacion-promociones {
+        grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width:600px) {
+    .grid-especificacion-promociones {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+    .grid-especificacion-contenido {
+        padding: 20px;
+    }
+}

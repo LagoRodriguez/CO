@@ -1,0 +1,44 @@
+.grid-perfil-detalles h4 {
+    color: #999;
+    font-size: 17.33px;
+    margin-bottom: 10px;
+}
+
+.grid-perfil-detalles .contenedor-direccion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 5px 0;
+    position: relative;
+    border-bottom: 1px solid #999;
+}
+
+.grid-perfil-detalles .contenedor-direccion h5 {
+    font-weight: 400;
+    color: #181818;
+    font-size: 14px;
+}
+
+.grid-perfil-detalles .contenedor-direccion h5 span {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.grid-perfil-detalles .contenedor-direccion p {
+    font-size: 12px;
+    color: #282c34;
+    margin: 5px 0;
+}
+
+.contenedor-direccion-boton {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border: 1px solid #282c34;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+    font-size: 11px;
+}
